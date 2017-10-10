@@ -1,0 +1,170 @@
+
+.album {
+    perspective: 1000;
+    margin: 15px;
+    width: 450px;
+    height: 450px;
+    cursor: pointer;
+
+    &.hover .album__flipper {
+        transform: rotateY(180deg);
+    }
+
+    &__flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d; 
+        position: relative;
+        pointer-events: none;    
+    }
+
+    &__front, &__back {
+        width: 450px;
+        height: 450px;
+        backface-visibility: hidden;
+        box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__front {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        background-color: white;
+        pointer-events: none;
+    }
+    
+    &__back {
+        transform: rotateY(180deg);
+        background: #1db954;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    &__covers-wrapper {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        pointer-events: none;
+    }
+
+    &__playlist-wrapper {
+        
+    }
+    
+    &__button {
+        border: 2px solid white;
+        padding: 10px 30px;
+        color: white;
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+        text-decoration: none;
+        pointer-events: visible;
+        transition: all 100ms ease-in-out;
+
+        &:hover {
+            color: #1db954;
+            background-color: white;
+        }
+    }
+
+}
+
+.playlist {
+      color: white;
+      margin: 0 0 30px 0;
+      padding: 0;
+      list-style-type: decimal-leading-zero;
+      pointer-events: none;
+
+    &__tune {
+          padding: 0;
+          margin: 3px 0 3px 25px;
+          font-size: 14px;
+
+        span {
+              font-weight: 700;
+        }
+    }
+}
+
+.cover {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition: all 1000ms ease-in-out;
+    pointer-events: none;
+    filter:  drop-shadow(0px 0px 3px rgba(0,0,0,1));
+}
+
+.cover1 {
+    left: 0;
+    top: 0;
+}
+
+.cover2 {
+    left: 100px;
+    top: 0;
+}
+
+.cover3 {
+    left: 200px;
+    top: 0;
+}
+
+.cover4 {
+    left: 300px;
+    top: 0;
+}
+
+.cover5 {
+    left: 0;
+    top: 100px;
+}
+
+.cover6 {
+    left: 100px;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.cover7 {
+    left: 300px;
+    top: 100px;
+}
+
+.cover8 {
+    left: 0;
+    top: 200px;
+}
+
+.cover9 {
+    left: 300px;
+    top: 200px;
+}
+
+.cover10 {
+    left: 0;
+    top: 300px;
+}
+
+.cover11 {
+    left: 100px;
+    top: 300px;
+}
+
+.cover12 {
+    left: 200px;
+    top: 300px;
+}
+
+.cover13 {
+    left: 300px;
+    top: 300px;
+}
