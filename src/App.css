@@ -548,6 +548,23 @@ body {
   margin: 0 auto;
   font-family: 'Roboto'; }
 
+.header {
+  padding: 50px 0; }
+  .header__logo {
+    text-align: center;
+    padding: 30px 0; }
+
+.nav {
+  display: flex;
+  justify-content: center; }
+  .nav__item {
+    margin: 0 30px; }
+    .nav__item a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: black; }
+
 .album {
   perspective: 1000;
   margin: 15px;
@@ -613,66 +630,166 @@ body {
     margin: 3px 0 3px 25px;
     font-size: 14px; }
     .playlist__tune span {
-      font-weight: 700; }
+      font-weight: 700;
+      text-transform: uppercase; }
 
 .cover {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   position: absolute;
   transition: all 1000ms ease-in-out;
   pointer-events: none;
-  filter: drop-shadow(0px 0px 3px black); }
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7)); }
 
 .cover1 {
   left: 0;
   top: 0; }
 
 .cover2 {
-  left: 100px;
+  left: 90px;
   top: 0; }
 
 .cover3 {
-  left: 200px;
+  left: 180px;
   top: 0; }
 
 .cover4 {
-  left: 300px;
+  left: 270px;
   top: 0; }
 
 .cover5 {
   left: 0;
-  top: 100px; }
+  top: 90px; }
 
 .cover6 {
-  left: 100px;
-  top: 100px;
-  width: 200px;
-  height: 200px; }
+  left: 70px;
+  top: 70px;
+  width: 260px;
+  height: 260px;
+  z-index: 100; }
 
 .cover7 {
-  left: 300px;
-  top: 100px; }
+  left: 270px;
+  top: 90px;
+  z-index: 101; }
 
 .cover8 {
   left: 0;
-  top: 200px; }
+  top: 180px;
+  z-index: 101; }
 
 .cover9 {
-  left: 300px;
-  top: 200px; }
+  left: 270px;
+  top: 200px;
+  z-index: 1; }
 
 .cover10 {
   left: 0;
-  top: 300px; }
+  top: 270px; }
 
 .cover11 {
+  left: 90px;
+  top: 270px;
+  z-index: 101; }
+
+.cover12 {
+  left: 180px;
+  top: 270px; }
+
+.cover13 {
+  left: 270px;
+  top: 270px;
+  z-index: 101; }
+
+.album-page__playlist-section {
+  position: relative;
+  background-color: #1db954; }
+
+.album-page__album {
+  width: 550px;
+  background-color: white; }
+
+.album-page .greenbox {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+  background-color: #1db954; }
+
+.album-page__covers-wrapper {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  pointer-events: none;
+  border: 1px solid red; }
+
+.album-page__cover {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  transition: all 1000ms ease-in-out;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7)); }
+
+.album-page__cover1 {
+  left: 0;
+  top: 0;
+  z-index: 1; }
+
+.album-page__cover2 {
+  left: 100px;
+  top: 0;
+  z-index: 2; }
+
+.album-page__cover3 {
+  left: 200px;
+  top: 0;
+  z-index: 3; }
+
+.album-page__cover4 {
+  left: 300px;
+  top: 0;
+  z-index: 4; }
+
+.album-page__cover5 {
+  left: 0;
+  top: 100px;
+  z-index: 0; }
+
+.album-page__cover6 {
+  left: 75px;
+  top: 75px;
+  width: 250px;
+  height: 250px;
+  z-index: 20; }
+
+.album-page__cover7 {
+  left: 300px;
+  top: 100px;
+  z-index: 1; }
+
+.album-page__cover8 {
+  left: 0;
+  top: 200px;
+  z-index: 0; }
+
+.album-page__cover9 {
+  left: 300px;
+  top: 200px; }
+
+.album-page__cover10 {
+  left: 0;
+  top: 300px; }
+
+.album-page__cover11 {
   left: 100px;
   top: 300px; }
 
-.cover12 {
+.album-page__cover12 {
   left: 200px;
   top: 300px; }
 
-.cover13 {
+.album-page__cover13 {
   left: 300px;
   top: 300px; }
