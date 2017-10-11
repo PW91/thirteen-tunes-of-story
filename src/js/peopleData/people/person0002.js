@@ -16,7 +16,9 @@ import cover13Img from '../../../images/people/person0002/covers/13.jpg';
 const person = {
     id: '2',
     name: 'Karolina',
-    age: 25,
+    year: 1992,
+    date: null,
+    birthplace: 'Warsaw, Poland',
     portraitImgSrc: portraitImg,
     coversImgSrc: [
         cover01Img, 

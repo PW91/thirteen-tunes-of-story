@@ -536,7 +536,8 @@ p, .p {
   hyphenate-lines: 3; }
 
 body {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  font-family: 'Roboto'; }
 
 .home-page {
   display: flex;
@@ -544,9 +545,11 @@ body {
   justify-content: center; }
 
 .layout {
+  overflow: hidden; }
+
+.wrap {
   width: 960px;
-  margin: 0 auto;
-  font-family: 'Roboto'; }
+  margin: 0 auto; }
 
 .header {
   padding: 50px 0; }
@@ -665,23 +668,19 @@ body {
   left: 70px;
   top: 70px;
   width: 260px;
-  height: 260px;
-  z-index: 100; }
+  height: 260px; }
 
 .cover7 {
   left: 270px;
-  top: 90px;
-  z-index: 101; }
+  top: 90px; }
 
 .cover8 {
   left: 0;
-  top: 180px;
-  z-index: 101; }
+  top: 180px; }
 
 .cover9 {
   left: 270px;
-  top: 200px;
-  z-index: 1; }
+  top: 200px; }
 
 .cover10 {
   left: 0;
@@ -689,8 +688,7 @@ body {
 
 .cover11 {
   left: 90px;
-  top: 270px;
-  z-index: 101; }
+  top: 270px; }
 
 .cover12 {
   left: 180px;
@@ -698,98 +696,89 @@ body {
 
 .cover13 {
   left: 270px;
-  top: 270px;
-  z-index: 101; }
+  top: 270px; }
 
-.album-page__playlist-section {
-  position: relative;
-  background-color: #1db954; }
-
-.album-page__album {
-  width: 550px;
-  background-color: white; }
-
-.album-page .greenbox {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  left: 100%;
-  background-color: #1db954; }
-
-.album-page__covers-wrapper {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  pointer-events: none;
-  border: 1px solid red; }
-
-.album-page__cover {
-  width: 125px;
-  height: 125px;
-  position: absolute;
-  transition: all 1000ms ease-in-out;
-  pointer-events: none;
-  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7)); }
-
-.album-page__cover1 {
-  left: 0;
-  top: 0;
-  z-index: 1; }
-
-.album-page__cover2 {
-  left: 100px;
-  top: 0;
-  z-index: 2; }
-
-.album-page__cover3 {
-  left: 200px;
-  top: 0;
-  z-index: 3; }
-
-.album-page__cover4 {
-  left: 300px;
-  top: 0;
-  z-index: 4; }
-
-.album-page__cover5 {
-  left: 0;
-  top: 100px;
-  z-index: 0; }
-
-.album-page__cover6 {
-  left: 75px;
-  top: 75px;
-  width: 250px;
-  height: 250px;
-  z-index: 20; }
-
-.album-page__cover7 {
-  left: 300px;
-  top: 100px;
-  z-index: 1; }
-
-.album-page__cover8 {
-  left: 0;
-  top: 200px;
-  z-index: 0; }
-
-.album-page__cover9 {
-  left: 300px;
-  top: 200px; }
-
-.album-page__cover10 {
-  left: 0;
-  top: 300px; }
-
-.album-page__cover11 {
-  left: 100px;
-  top: 300px; }
-
-.album-page__cover12 {
-  left: 200px;
-  top: 300px; }
-
-.album-page__cover13 {
-  left: 300px;
-  top: 300px; }
+.album-page {
+  height: 3000px; }
+  .album-page__personal-section {
+    border: 1px solid red; }
+  .album-page__person-img {
+    width: 50%; }
+  .album-page__play-section {
+    position: relative;
+    background-color: #1db954;
+    display: flex; }
+  .album-page__album {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .album-page .greenbox {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    background-color: #1db954; }
+  .album-page__covers-wrapper {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    pointer-events: none; }
+  .album-page__cover {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    transition: all 1000ms ease-in-out;
+    pointer-events: none; }
+  .album-page iframe {
+    display: block;
+    box-shadow: 0px 0px 5px 4px black; }
+  .album-page__cover1 {
+    left: 0;
+    top: 0; }
+  .album-page__cover2 {
+    left: 125px;
+    top: 0; }
+  .album-page__cover3 {
+    left: 250px;
+    top: 0; }
+  .album-page__cover4 {
+    left: 375px;
+    top: 0; }
+  .album-page__cover5 {
+    left: 0;
+    top: 125px; }
+  .album-page__cover6 {
+    left: 125px;
+    top: 125px;
+    width: 250px;
+    height: 250px; }
+  .album-page__cover7 {
+    left: 375px;
+    top: 125px; }
+  .album-page__cover8 {
+    left: 0;
+    top: 250px;
+    z-index: 0; }
+  .album-page__cover9 {
+    left: 375px;
+    top: 250px; }
+  .album-page__cover10 {
+    left: 0;
+    top: 375px; }
+  .album-page__cover11 {
+    left: 125px;
+    top: 375px; }
+  .album-page__cover12 {
+    left: 250px;
+    top: 375px; }
+  .album-page__cover13 {
+    left: 375px;
+    top: 375px; }
+  .album-page__playlist-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 50px; }

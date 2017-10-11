@@ -11,8 +11,10 @@ export default class Layout extends Component {
 
         return(
             <div className='layout'>
-                <Header/>
-                { children }
+                <div className='wrap'>
+                    <Header/>
+                    { children }
+                </div>
             </div>
         )
     }

@@ -16,7 +16,9 @@ import cover13Img from '../../../images/people/person0004/covers/13.jpg';
 const person = {
     id: '4',
     name: 'Slawek',
-    age: 23,
+    year: 1994,
+    date: null,
+    birthplace: 'Warsaw, Poland',
     portraitImgSrc: portraitImg,
     coversImgSrc: [
         cover01Img, 

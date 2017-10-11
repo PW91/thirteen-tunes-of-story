@@ -16,7 +16,9 @@ import cover13Img from '../../../images/people/person0001/covers/13.jpg';
 const person = {
     id: '1',
     name: 'Przemyslaw',
-    age: 26,
+    year: 1991,
+    date: null,
+    birthplace: 'Warsaw, Poland',
     portraitImgSrc: portraitImg,
     coversImgSrc: [
         cover01Img, 

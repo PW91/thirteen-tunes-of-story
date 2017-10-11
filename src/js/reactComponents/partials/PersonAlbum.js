@@ -129,6 +129,7 @@ export default class PersonAlbum extends Component {
                             { person.coversImgSrc.map((cover, index) => {
 
                                 const cssClass = 'cover' + (index + 1);
+                                const zIndex = Math.floor(Math.random()*100);
 
                                 return (
                                     <img 
@@ -136,6 +137,9 @@ export default class PersonAlbum extends Component {
                                         className={ "cover " + cssClass } 
                                         src={ cover } 
                                         alt={ cover }
+                                        style={{
+                                            zIndex: zIndex
+                                        }}
                                     />
                                 )
                             })}

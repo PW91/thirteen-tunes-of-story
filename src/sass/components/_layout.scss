@@ -1,6 +1,6 @@
 body {
 	background-color: #f4f4f4;
-	//overflow: hidden;
+	font-family: 'Roboto';
 }
 
 .home-page {
@@ -10,8 +10,12 @@ body {
 }
 
 .layout {
+	overflow: hidden;
+	
+	//border: 1px solid red;
+}
+
+.wrap {
 	width: 960px;
 	margin: 0 auto;
-	font-family: 'Roboto';
-	//border: 1px solid red;
 }
