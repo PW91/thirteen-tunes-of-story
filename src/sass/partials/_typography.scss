@@ -1,5 +1,5 @@
 // font stacks
-$sans-serif:   "Roboto", Arial, Helvetica, sans-serif;
+$sans-serif:   "Nunito", Arial, Helvetica, sans-serif;
 $serif:         "Georgia", Cambria, Times New Roman, Times, serif;
 
 
@@ -45,13 +45,13 @@ $tiny-tablet         : pxToRem(12);
 // SIZES - DESKTOP  //
 //////////////////////
 
-$singularity-desktop : pxToRem(42);
-$huge-desktop        : pxToRem(32);
+$singularity-desktop : pxToRem(90);
+$huge-desktop        : pxToRem(50);
 $large-desktop       : pxToRem(28);
 $bigger-desktop      : pxToRem(22);
 $big-desktop         : pxToRem(20);
 $medium-desktop      : pxToRem(17);
-$normal-desktop      : pxToRem(15);
+$normal-desktop      : pxToRem(16);
 $small-desktop       : pxToRem(14);
 $little-desktop      : pxToRem(13);
 $tiny-desktop        : pxToRem(12);
@@ -60,7 +60,7 @@ $tiny-desktop        : pxToRem(12);
 // SIZES - WIDE  //
 ///////////////////
 
-$singularity-wide    : pxToRem(52); // h1
+$singularity-wide    : pxToRem(100); // h1
 $huge-wide           : pxToRem(36); // h2
 $large-wide          : pxToRem(32);
 $bigger-wide         : pxToRem(24); // h3
