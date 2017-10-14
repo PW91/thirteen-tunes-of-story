@@ -12,7 +12,6 @@ export default class Layout extends Component {
         return(
             <div className='layout'>
                 <div className='wrap'>
-                    {/*<Header/>*/}
                     { children }
                 </div>
             </div>

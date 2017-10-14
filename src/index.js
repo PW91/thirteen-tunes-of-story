@@ -15,18 +15,7 @@ import './App.css';
 const root = document.getElementById('root');
 
 ReactDOM.render(
-	
-	<Router>
-		<Layout>
-			<Switch>
-				<Route exact={true} path='/' component={ HomePage }/>
-				<Route path='/album' component={ AlbumPage }/>
-				<Route path='/stats' component={ StatsPage }/>
-				<Route path='/about' component={ AboutPage }/>
-				<Route path='/contact' component={ ContactPage }/>
-			</Switch>
-		</Layout>
-	</Router>,
+	<HomePage/>,
 root);
 
 registerServiceWorker();
