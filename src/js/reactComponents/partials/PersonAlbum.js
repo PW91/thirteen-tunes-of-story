@@ -16,8 +16,8 @@ export default class PersonAlbum extends Component {
     }
 
     componentDidMount() {
-        const covers = Array.prototype.slice.call(document.querySelectorAll('.cover'));
-        this.intervalController(true, covers);
+        //const covers = Array.prototype.slice.call(document.querySelectorAll('.cover'));
+        //this.intervalController(true, covers);
     }
 
     handleMouseOut = (e) => {

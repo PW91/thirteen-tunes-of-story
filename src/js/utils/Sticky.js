@@ -4,7 +4,7 @@ export default class Sticky {
     
             this.makeItSticky = function (el, elOffset) {
 
-                console.log(elOffset, window.pageYOffset);
+                //console.log(elOffset, window.pageYOffset);
     
                 if (window.pageYOffset > elOffset) {
                     el.classList.add('fixed');

@@ -18,9 +18,14 @@ export default class HomePage extends Component {
 
 		const logoEl = document.querySelector('.logo__wrapper');
 		const offsetValue2 = logoEl.offsetTop;
+
+		//const iframeEl = document.querySelector('iframe');
+		//const offsetValue3 = iframeEl.offsetTop;
 		
-		this.sticky2 = new Sticky(logoEl, offsetValue2);
 		this.sticky1 = new Sticky(buttonsEl, offsetValue1);
+		this.sticky2 = new Sticky(logoEl, offsetValue2);
+		//this.sticky3 = new Sticky(iframeEl, offsetValue3);
+		
 
 		//logoEl.style.transform = 'scale(0.5)';
 		
@@ -32,8 +37,8 @@ export default class HomePage extends Component {
 			<div className='home-page'>
 				<header className='header'>
 					<div className='logo__wrapper'>
-						<h1>13TUNES</h1>
-						<h1>OFSTORY</h1>
+						<h1><span>13</span>TUNES</h1>
+						<h1><span>OF</span>STORY</h1>
 					</div>
 					<div className='header__text'>
 						<p>"Human is a story. Musis is a form of telling it."</p>
